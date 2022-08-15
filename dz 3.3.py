@@ -24,5 +24,4 @@ def get_jokes(amount: int):
         jokes.append(f'{noun} {adverb} {adjective}')
     print(jokes)
 
-
 get_jokes(4)
