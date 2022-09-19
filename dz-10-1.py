@@ -37,7 +37,7 @@ class Matrix:
             raise ValueError("Matrix sizes difference")
         for item in zip(self.matrix, other.matrix):
             result.append([sum([j, k]) for j, k in zip(*item)])
-        return result
+        return '\n'.join(['\t'.join(map(str, row)) for row in result])
 
 
 m1 = Matrix([[0, 1, 2], [2, 1, 2]])
